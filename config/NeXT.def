@@ -1,0 +1,14 @@
+#  Mathtool Definitions for NeXT Architectures
+#
+#  $Id: NeXT.def,v 1.1 1997/09/13 23:38:43 jak Exp $
+#
+#  Copyright (C) 1993, John A. Kassebaum
+#
+#  This software was written by John Kassebaum as a part of his graduate
+#  course work at Purdue.  He retains all rights to this software.  
+# 
+#
+
+ARCHDEFS=-O2 -ggdb3 -DGNUC -DNEXT
+CC=cc
+AR=libtool

@@ -1,0 +1,16 @@
+#
+# Dependancy Inclusion Rules
+#
+#   $Id: DependRules.def,v 1.1 1997/09/13 23:38:38 jak Exp $
+#
+
+include $(DEPENDOBJ) $(DEPENDEXE)
+
+#
+# History:
+#   $Log: DependRules.def,v $
+#   Revision 1.1  1997/09/13 23:38:38  jak
+#   Initial revision
+#
+#
+
