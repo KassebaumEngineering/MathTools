@@ -1,6 +1,6 @@
 
-//  LU_Decomposition.cc
-//  C++ File to Instantiate LU_Decomposition Template
+//  LU.cc
+//  C++ File to Instantiate LU Template
 //
 //  Copyright (C) 1993, John A. Kassebaum
 //
@@ -8,21 +8,24 @@
 //  course work at Purdue.  He retains all rights to this software.  
 //
 //  Revision:
-//    $Id: LU_Decomposition.cc,v 1.2 1997/09/14 01:01:35 jak Exp $
+//    $Id: LU.cc,v 1.1 1997/09/14 01:37:52 jak Exp $
 //
 //  Known Bugs:
 //
 // =====================================
 //
 
-static char rcsid_LU_Decomposition_cc[] = "$Id: LU_Decomposition.cc,v 1.2 1997/09/14 01:01:35 jak Exp $";
+static char rcsid_LU_cc[] = "$Id: LU.cc,v 1.1 1997/09/14 01:37:52 jak Exp $";
 
 #pragma implementation
-#include "LU_Decomposition.h"
+#include "LU.h"
 
 //
 //  History:
-//    $Log: LU_Decomposition.cc,v $
+//    $Log: LU.cc,v $
+//    Revision 1.1  1997/09/14 01:37:52  jak
+//    Renamed The LU_Decomposition to simply LU. -jak
+//
 //    Revision 1.2  1997/09/14 01:01:35  jak
 //    Some purely cosmetic changes. -jak
 //

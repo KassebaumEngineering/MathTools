@@ -1,6 +1,6 @@
 
-//  LU_Decomposition.h
-//  C++ Class Definition of the LU_Decomposition Class
+//  LU.h
+//  C++ Class Definition of the LU Class
 //
 //  Copyright (C) 1993, John A. Kassebaum
 //
@@ -8,7 +8,7 @@
 //  course work at Purdue.  He retains all rights to this software.  
 //
 //  *************************  Description  **************************
-//  LU_Decomposition Class:
+//  LU Class:
 //
 //  Public Data:
 //
@@ -27,14 +27,14 @@
 //    his graduate classwork at Purdue University.  
 //
 //  Revision:
-//    $Id: LU_Decomposition.h,v 1.2 1997/09/14 01:01:36 jak Exp $
+//    $Id: LU.h,v 1.1 1997/09/14 01:37:54 jak Exp $
 //
 //  ******************************************************************
 //
-#ifndef _LU_Decomposition_h
-#define _LU_Decomposition_h
+#ifndef _LU_h
+#define _LU_h
 
-static char rcsid_LU_Decomposition_h[] = "$Id: LU_Decomposition.h,v 1.2 1997/09/14 01:01:36 jak Exp $";
+static char rcsid_LU_h[] = "$Id: LU.h,v 1.1 1997/09/14 01:37:54 jak Exp $";
 
 #pragma interface
 
@@ -72,7 +72,7 @@ template <class NUMTYPE> class MatrixComposition;
 #include "MP_Float.h"
 
 // ---------------------------------------------------------------------
-// LU_Decomposition<NUMTYPE> : Template Class
+// LU<NUMTYPE> : Template Class
 // ---------------------------------------------------------------------
 
 #define P_OF_LU    0
@@ -80,24 +80,24 @@ template <class NUMTYPE> class MatrixComposition;
 #define U_OF_LU    2
 
 template <class NUMTYPE>
-class LU_Decomposition : public MatrixComposition<NUMTYPE>
+class LU : public MatrixComposition<NUMTYPE>
 {
 public:
     IntArray            row_permute;
     Matrix<NUMTYPE>     lumat;
 
-    LU_Decomposition( void );
-    LU_Decomposition( Matrix<NUMTYPE>& );
-    LU_Decomposition( const LU_Decomposition<NUMTYPE>& );
-    virtual ~LU_Decomposition( void );
+    LU( void );
+    LU( Matrix<NUMTYPE>& );
+    LU( const LU<NUMTYPE>& );
+    virtual ~LU( void );
 
 // Assignment Operations
-    LU_Decomposition<NUMTYPE>&  operator = (const LU_Decomposition<NUMTYPE> &);
+    LU<NUMTYPE>&  operator = (const LU<NUMTYPE> &);
 
     inline int is_empty() const {
         return lumat.is_empty();
     };
-    inline LU_Decomposition<NUMTYPE>&  shift_to (int fr, int fc){
+    inline LU<NUMTYPE>&  shift_to (int fr, int fc){
         row_permute.shift_to( fr );
         lumat.shift_to( fr, fc );
         return *this;
@@ -112,7 +112,7 @@ public:
 };
 
 // ---------------------------------------------------------------------
-// LU_Decomposition<NUMTYPE> : Template Class Implementation
+// LU<NUMTYPE> : Template Class Implementation
 // ---------------------------------------------------------------------
 
 // ======================================
@@ -131,18 +131,18 @@ typedef long double         longdouble;
 typedef complex<MP_Float>   mp_float_complex;
 typedef complex<MP_Ratio>   mp_ratio_complex;
 
-inline const          longdouble            LU_Decomposition<longdouble>::Tiny( void ) const { return LDBL_EPSILON; };
-inline const               float                 LU_Decomposition<float>::Tiny( void ) const { return FLT_EPSILON; };
-inline const              double                LU_Decomposition<double>::Tiny( void ) const { return DBL_EPSILON; };
-inline const       float_complex         LU_Decomposition<float_complex>::Tiny( void ) const { return float_complex( FLT_EPSILON, 0.0 ); };
-inline const      double_complex        LU_Decomposition<double_complex>::Tiny( void ) const { return double_complex( DBL_EPSILON, 0.0 ); };
-inline const long_double_complex LU_Decomposition< long_double_complex >::Tiny( void ) const { return long_double_complex( DBL_EPSILON, 0.0 ); };
+inline const          longdouble            LU<longdouble>::Tiny( void ) const { return LDBL_EPSILON; };
+inline const               float                 LU<float>::Tiny( void ) const { return FLT_EPSILON; };
+inline const              double                LU<double>::Tiny( void ) const { return DBL_EPSILON; };
+inline const       float_complex         LU<float_complex>::Tiny( void ) const { return float_complex( FLT_EPSILON, 0.0 ); };
+inline const      double_complex        LU<double_complex>::Tiny( void ) const { return double_complex( DBL_EPSILON, 0.0 ); };
+inline const long_double_complex LU< long_double_complex >::Tiny( void ) const { return long_double_complex( DBL_EPSILON, 0.0 ); };
 
-inline const            MP_Float          LU_Decomposition<MP_Float>::Tiny( void ) const { return MP_FLOAT_EPSILON; };
-inline const    mp_float_complex  LU_Decomposition<mp_float_complex>::Tiny( void ) const { return mp_float_complex( MP_FLOAT_EPSILON, 0.0 ); };
+inline const            MP_Float          LU<MP_Float>::Tiny( void ) const { return MP_FLOAT_EPSILON; };
+inline const    mp_float_complex  LU<mp_float_complex>::Tiny( void ) const { return mp_float_complex( MP_FLOAT_EPSILON, 0.0 ); };
 
-inline const            MP_Ratio          LU_Decomposition<MP_Ratio>::Tiny( void ) const { return MP_RATIO_EPSILON; };
-inline const    mp_ratio_complex  LU_Decomposition<mp_ratio_complex>::Tiny( void ) const { return mp_ratio_complex( MP_RATIO_EPSILON, 0.0 ); };
+inline const            MP_Ratio          LU<MP_Ratio>::Tiny( void ) const { return MP_RATIO_EPSILON; };
+inline const    mp_ratio_complex  LU<mp_ratio_complex>::Tiny( void ) const { return mp_ratio_complex( MP_RATIO_EPSILON, 0.0 ); };
 
 inline longdouble real( const longdouble   value ) { return value; };
 inline      float real( const      float   value ) { return value; };
@@ -157,7 +157,7 @@ inline   MP_Ratio real( const   MP_Ratio & value ) { return value; };
 // ======================================
 
 template <class NUMTYPE>
-LU_Decomposition<NUMTYPE>::LU_Decomposition( void ):
+LU<NUMTYPE>::LU( void ):
     lumat(), row_permute()
 {
     ;
@@ -170,7 +170,7 @@ LU_Decomposition<NUMTYPE>::LU_Decomposition( void ):
 // ======================================
 
 template <class NUMTYPE>
-LU_Decomposition<NUMTYPE>::LU_Decomposition( const LU_Decomposition<NUMTYPE> &lu ):
+LU<NUMTYPE>::LU( const LU<NUMTYPE> &lu ):
      lumat( lu.lumat ), row_permute( lu.row_permute )
 {
     ;
@@ -183,7 +183,7 @@ LU_Decomposition<NUMTYPE>::LU_Decomposition( const LU_Decomposition<NUMTYPE> &lu
 // ======================================
 
 template <class NUMTYPE>
-LU_Decomposition<NUMTYPE>::LU_Decomposition( Matrix<NUMTYPE> &matA )
+LU<NUMTYPE>::LU( Matrix<NUMTYPE> &matA )
 {
 // This algorithm is a distinct implementation of an algorithm found
 // in Numerical Recipes in C.  The ideas expressed as code here, were 
@@ -194,7 +194,7 @@ LU_Decomposition<NUMTYPE>::LU_Decomposition( Matrix<NUMTYPE> &matA )
     int first_row, first_col, col_to_row, size;
     register int row, col, k;
     double permute_parity;  // even # of row permutations = +1.0, odd = -1.0
-    LU_Decomposition<NUMTYPE> *temp;
+    LU<NUMTYPE> *temp;
     NUMTYPE *row_scaling;
 
     permute_parity = 1.0;
@@ -204,8 +204,8 @@ LU_Decomposition<NUMTYPE>::LU_Decomposition( Matrix<NUMTYPE> &matA )
     }
 
 // Get MatA's stored LU Decomposition if available
-    temp = (LU_Decomposition<NUMTYPE> *)( matA.getDecompose( LU_DECOMP ) );
-    if ( temp != (LU_Decomposition<NUMTYPE> *)0 ) {
+    temp = (LU<NUMTYPE> *)( matA.getDecompose( LU_DECOMP ) );
+    if ( temp != (LU<NUMTYPE> *)0 ) {
         *this = *temp;
         return;
     }
@@ -305,7 +305,7 @@ LU_Decomposition<NUMTYPE>::LU_Decomposition( Matrix<NUMTYPE> &matA )
 // End LU routine
 // 
 
-	matA.setDecompose( new LU_Decomposition<NUMTYPE>( *this ), LU_DECOMP );
+	matA.setDecompose( new LU<NUMTYPE>( *this ), LU_DECOMP );
 
     delete &(row_scaling[first_row]); 
 };
@@ -317,7 +317,7 @@ LU_Decomposition<NUMTYPE>::LU_Decomposition( Matrix<NUMTYPE> &matA )
 // ======================================
 
 template <class NUMTYPE>
-LU_Decomposition<NUMTYPE>::~LU_Decomposition()
+LU<NUMTYPE>::~LU()
 {
     ;
 };
@@ -330,7 +330,7 @@ LU_Decomposition<NUMTYPE>::~LU_Decomposition()
 // ======================================
 
 template <class NUMTYPE>
-LU_Decomposition<NUMTYPE>&  LU_Decomposition<NUMTYPE>::operator= (const LU_Decomposition<NUMTYPE> & lu)
+LU<NUMTYPE>&  LU<NUMTYPE>::operator= (const LU<NUMTYPE> & lu)
 {
     if ( ! lu.is_empty() ){
 		lumat = lu.lumat;
@@ -347,7 +347,7 @@ LU_Decomposition<NUMTYPE>&  LU_Decomposition<NUMTYPE>::operator= (const LU_Decom
 // ======================================
 
 template <class NUMTYPE>
-Matrix<NUMTYPE> LU_Decomposition<NUMTYPE>::solve_for( const Matrix<NUMTYPE> &matA )
+Matrix<NUMTYPE> LU<NUMTYPE>::solve_for( const Matrix<NUMTYPE> &matA )
 {
     Matrix<NUMTYPE> result;
     register int row, col;
@@ -355,7 +355,7 @@ Matrix<NUMTYPE> LU_Decomposition<NUMTYPE>::solve_for( const Matrix<NUMTYPE> &mat
     int Rows, Cols;
 
     if( matA.Rows () != lumat.Rows () ){
-        Abort("LU_Decomposition<NUMTYPE>::solve_for(const Matrix<NUMTYPE>&): Incompatible Row Dimensions!\n");
+        Abort("LU<NUMTYPE>::solve_for(const Matrix<NUMTYPE>&): Incompatible Row Dimensions!\n");
     }
     if((matA.FirstRow() != lumat.FirstRow())
            ||(matA.FirstCol() != lumat.FirstCol())){
@@ -413,7 +413,7 @@ Matrix<NUMTYPE> LU_Decomposition<NUMTYPE>::solve_for( const Matrix<NUMTYPE> &mat
 // ======================================
 
 template <class NUMTYPE>
-NUMTYPE  LU_Decomposition<NUMTYPE>:: determinant() 
+NUMTYPE  LU<NUMTYPE>:: determinant() 
 {
     register int i, col_to_row;
     NUMTYPE result;
@@ -433,7 +433,7 @@ NUMTYPE  LU_Decomposition<NUMTYPE>:: determinant()
 // ======================================
 
 template <class NUMTYPE>
-Matrix<NUMTYPE> LU_Decomposition<NUMTYPE>:: operator[] ( int  key ) const
+Matrix<NUMTYPE> LU<NUMTYPE>:: operator[] ( int  key ) const
 {
     register int i,j;
     Matrix<NUMTYPE> rtn( lumat );
@@ -474,11 +474,14 @@ Matrix<NUMTYPE> LU_Decomposition<NUMTYPE>:: operator[] ( int  key ) const
 //
 
 
-#endif // _LU_Decomposition_h
+#endif // _LU_h
 
 //
 //  History:
-//    $Log: LU_Decomposition.h,v $
+//    $Log: LU.h,v $
+//    Revision 1.1  1997/09/14 01:37:54  jak
+//    Renamed The LU_Decomposition to simply LU. -jak
+//
 //    Revision 1.2  1997/09/14 01:01:36  jak
 //    Some purely cosmetic changes. -jak
 //

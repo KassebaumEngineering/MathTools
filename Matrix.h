@@ -33,14 +33,14 @@
 //  Known Bugs:
 //
 //  Revision:
-//    $Id: Matrix.h,v 1.2 1997/09/14 01:01:55 jak Exp $
+//    $Id: Matrix.h,v 1.3 1997/09/14 01:37:59 jak Exp $
 //
 // ==========================================================================
 //
 #ifndef _Matrix_h
 #define _Matrix_h
 
-static char rcsid_Matrix_h[] = "$Id: Matrix.h,v 1.2 1997/09/14 01:01:55 jak Exp $";
+static char rcsid_Matrix_h[] = "$Id: Matrix.h,v 1.3 1997/09/14 01:37:59 jak Exp $";
 
 #pragma interface
 
@@ -89,7 +89,7 @@ inline void Abort( const char *s ){
 // 
 template <class NUMTYPE> class Matrix;
 template <class NUMTYPE> class MatrixComposition;
-template <class NUMTYPE> class LU_Decomposition;
+template <class NUMTYPE> class LU;
 template <class NUMTYPE> class Cholesky;
 
 //
@@ -451,7 +451,7 @@ public:
 // Use the following Template Classes
 // 
 #include "MatrixComposition.h"
-#include "LU_Decomposition.h"
+#include "LU.h"
 #include "Cholesky.h"
 
 // ------------------------------------------------------------------------------------
@@ -1389,7 +1389,7 @@ Matrix<NUMTYPE> operator / (Matrix<NUMTYPE> &matA, Matrix<NUMTYPE> &matB)
     if ((matB.number_of_rows() == 1)&&(matB.number_of_cols() == 1)){
         return (matA * ( NUMTYPE( 1.0 ) / matB[matB.first_row()][matB.first_col()] ));
     } else {
-        LU_Decomposition<NUMTYPE> LU( matB );
+        LU<NUMTYPE> LU( matB );
         return  LU.solve_for( matA );
     }
 };
@@ -1415,7 +1415,7 @@ Matrix<NUMTYPE> inverse( Matrix<NUMTYPE> &matA )
         soln = matA;
         soln[matA.first_col()][matA.first_row()] = NUMTYPE( 1 ) / matA[matA.first_col()][matA.first_row()];
     } else {
-        LU_Decomposition<NUMTYPE> lu = matA;
+        LU<NUMTYPE> lu = matA;
 		Matrix<NUMTYPE> b = Matrix<NUMTYPE>::Identity( size );
 		b.shift_to( matA.first_col(), matA.first_row() );
 		soln = ( lu.solve_for( b ) );
@@ -1537,13 +1537,13 @@ NUMTYPE norm ( const Matrix<NUMTYPE>& matA, double p )
 template <class NUMTYPE>
 NUMTYPE determinant ( Matrix<NUMTYPE>& matA )
 {
-    LU_Decomposition<NUMTYPE> lu;
+    LU<NUMTYPE> lu;
     unsigned int size;
 
     if ((size = matA.number_of_rows()) != matA.number_of_cols())
         Abort("determinant( const Matrix<NUMTYPE>& ):Singular! - Matrix Argument is not square!");
 
-    lu = LU_Decomposition<NUMTYPE>( matA );
+    lu = LU<NUMTYPE>( matA );
     
     return lu.determinant();
 }; 
@@ -1873,6 +1873,9 @@ void Matrix<NUMTYPE>:: delDecompose ( int  key )
 //
 //  History:
 //    $Log: Matrix.h,v $
+//    Revision 1.3  1997/09/14 01:37:59  jak
+//    Renamed The LU_Decomposition to simply LU. -jak
+//
 //    Revision 1.2  1997/09/14 01:01:55  jak
 //    Some purely cosmetic changes. -jak
 //

@@ -1,6 +1,6 @@
 #  Makefile for Mathtools
 #
-#  $Id: Makefile,v 1.2 1997/09/14 00:09:44 jak Exp $
+#  $Id: Makefile,v 1.3 1997/09/14 01:37:57 jak Exp $
 #
 #  Copyright (C) 1993, John A. Kassebaum
 #
@@ -22,10 +22,10 @@ EXE_DIR=$(INSTALLDIR)/bin
 CFLAGS=$(ARCHDEFS) -I/usr/local/lib/g++-include  -I/usr/local/include -I..
 LIBS=-L/usr/local/lib -L. -lMathTools -lg++ -lgmp -lstdc++
 
-TEMPLATEFILES=Matrix.h LU_Decomposition.h Cholesky.h MatrixComposition.h \
+TEMPLATEFILES=Matrix.h LU.h Cholesky.h MatrixComposition.h \
 Range.h LinkedList.h IntArray.h MP_Float.h MP_Int.h MP_Ratio.h
 
-OBJECTS=Matrix.o LU_Decomposition.o Cholesky.o MatrixComposition.o Range.o \
+OBJECTS=Matrix.o LU.o Cholesky.o MatrixComposition.o Range.o \
 LinkedList.o IntArray.o MP_Float.o MP_Int.o MP_Ratio.o
 
 LIBRARIES=libMathTools.a
@@ -93,6 +93,9 @@ depend: $(DEPENDOBJ) $(DEPENDEXE)
 
 # History:
 #   $Log: Makefile,v $
+#   Revision 1.3  1997/09/14 01:37:57  jak
+#   Renamed The LU_Decomposition to simply LU. -jak
+#
 #   Revision 1.2  1997/09/14 00:09:44  jak
 #   Added deinstall and library paths. -jak
 #
