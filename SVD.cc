@@ -1,6 +1,6 @@
 
-//  Cholesky.cc
-//  C++ File to Instantiate Cholesky Template
+//  SVD.cc
+//  C++ File to Instantiate SVD Template
 //
 //  Copyright (C) 1993, John A. Kassebaum
 //
@@ -8,64 +8,65 @@
 //  course work at Purdue.  He retains all rights to this software.  
 //
 //  Known Bugs:
+//	  NOT YET READY FOR USE! 
 //
 //  Revision:
-//    $Id: SVD.cc,v 1.2 1997/09/14 01:38:01 jak Exp $
+//    $Id: SVD.cc,v 1.3 1997/09/14 04:20:38 jak Exp $
 //
 //
 // =====================================
 //
 
-static char rcsid_Cholesky_cc[] = "$Id: SVD.cc,v 1.2 1997/09/14 01:38:01 jak Exp $";
+static char rcsid_SVD_cc[] = "$Id: SVD.cc,v 1.3 1997/09/14 04:20:38 jak Exp $";
 
 #pragma implementation
-#include "Cholesky.h"
+#include "SVD.h"
 
-template               Cholesky<float>:: Cholesky( Matrix< float > & );
-template              Cholesky<double>:: Cholesky( Matrix< double > & );
-template          Cholesky<longdouble>:: Cholesky( Matrix< longdouble > & );
-template            Cholesky<MP_Float>:: Cholesky( Matrix< MP_Float > & );
-template            Cholesky<MP_Ratio>:: Cholesky( Matrix< MP_Ratio > & );
+template               SVD<float>:: SVD( Matrix< float > & );
+template              SVD<double>:: SVD( Matrix< double > & );
+template          SVD<longdouble>:: SVD( Matrix< longdouble > & );
+template            SVD<MP_Float>:: SVD( Matrix< MP_Float > & );
+template            SVD<MP_Ratio>:: SVD( Matrix< MP_Ratio > & );
 
-template               Cholesky<float>:: ~Cholesky();
-template              Cholesky<double>:: ~Cholesky();
-template          Cholesky<longdouble>:: ~Cholesky();
-template            Cholesky<MP_Float>:: ~Cholesky();
-template            Cholesky<MP_Ratio>:: ~Cholesky();
+template               SVD<float>:: ~SVD();
+template              SVD<double>:: ~SVD();
+template          SVD<longdouble>:: ~SVD();
+template            SVD<MP_Float>:: ~SVD();
+template            SVD<MP_Ratio>:: ~SVD();
 
-template               Cholesky<float>:: is_empty() const;
-template              Cholesky<double>:: is_empty() const;
-template          Cholesky<longdouble>:: is_empty() const;
-template            Cholesky<MP_Float>:: is_empty() const;
-template            Cholesky<MP_Ratio>:: is_empty() const;
+template               SVD<float>:: is_empty() const;
+template              SVD<double>:: is_empty() const;
+template          SVD<longdouble>:: is_empty() const;
+template            SVD<MP_Float>:: is_empty() const;
+template            SVD<MP_Ratio>:: is_empty() const;
 
 
-Cholesky<float_complex>::Cholesky( Matrix<float_complex> &matA ):
-    cholmat()
+SVD<float_complex>::SVD( Matrix<float_complex> &matA ):
+    svdmat()
 {
     ;
 };
 
-Cholesky<double_complex>::Cholesky( Matrix<double_complex> &matA ):
-    cholmat()
+SVD<double_complex>::SVD( Matrix<double_complex> &matA ):
+    svdmat()
 {
     ;
 };
 
-Cholesky<long_double_complex>::Cholesky( Matrix<long_double_complex> &matA ):
-    cholmat()
+SVD<long_double_complex>::SVD( Matrix<long_double_complex> &matA ):
+    svdmat()
 {
     ;
 };
 
-Cholesky<mp_float_complex>::Cholesky( Matrix<mp_float_complex> &matA ):
-    cholmat()
+SVD<mp_float_complex>::SVD( Matrix<mp_float_complex> &matA ):
+    svdmat()
 {
     ;
 };
 
-Cholesky<mp_ratio_complex>::Cholesky( Matrix<mp_ratio_complex> &matA ):
-    cholmat()
+SVD<mp_ratio_complex>::SVD( Matrix<mp_ratio_complex> &matA ):
+    svdmat()
 {
     ;
 };
@@ -73,13 +74,7 @@ Cholesky<mp_ratio_complex>::Cholesky( Matrix<mp_ratio_complex> &matA ):
 
 //  History:
 //    $Log: SVD.cc,v $
-//    Revision 1.2  1997/09/14 01:38:01  jak
-//    Renamed The LU_Decomposition to simply LU. -jak
-//
-//    Revision 1.2  1997/09/14 01:01:28  jak
-//    Some purely cosmetic changes. -jak
-//
-//    Revision 1.1.1.1  1997/09/13 23:38:37  jak
-//    Restored MathTools to new CVS repository. -jak
+//    Revision 1.3  1997/09/14 04:20:38  jak
+//    Skeletons of the QR and SVD now built from Cholesky - lot of work left. -jak
 //
 //
