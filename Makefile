@@ -1,6 +1,6 @@
 #  Makefile for Mathtools
 #
-#  $Id: Makefile,v 1.1 1997/09/13 23:38:41 jak Exp $
+#  $Id: Makefile,v 1.1.1.1 1997/09/13 23:38:41 jak Exp $
 #
 #  Copyright (C) 1993, John A. Kassebaum
 #
@@ -88,8 +88,8 @@ depend: $(DEPENDOBJ) $(DEPENDEXE)
 
 # History:
 #   $Log: Makefile,v $
-#   Revision 1.1  1997/09/13 23:38:41  jak
-#   Initial revision
+#   Revision 1.1.1.1  1997/09/13 23:38:41  jak
+#   Restored MathTools to new CVS repository. -jak
 #
 #
 

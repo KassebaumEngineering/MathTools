@@ -1,7 +1,7 @@
 #
 # Dependancy Inclusion Rules
 #
-#   $Id: DependRules.def,v 1.1 1997/09/13 23:38:38 jak Exp $
+#   $Id: DependRules.def,v 1.1.1.1 1997/09/13 23:38:38 jak Exp $
 #
 
 include $(DEPENDOBJ) $(DEPENDEXE)
@@ -9,8 +9,8 @@ include $(DEPENDOBJ) $(DEPENDEXE)
 #
 # History:
 #   $Log: DependRules.def,v $
-#   Revision 1.1  1997/09/13 23:38:38  jak
-#   Initial revision
+#   Revision 1.1.1.1  1997/09/13 23:38:38  jak
+#   Restored MathTools to new CVS repository. -jak
 #
 #
 

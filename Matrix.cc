@@ -15,12 +15,12 @@
 //  Known Bugs:
 //
 //  Revision:
-//    $Id: Matrix.cc,v 1.1 1997/09/13 23:38:41 jak Exp $
+//    $Id: Matrix.cc,v 1.1.1.1 1997/09/13 23:38:41 jak Exp $
 //
 // =====================================
 //
 
-static char rcsid_Matrix_cc[] = "$Id: Matrix.cc,v 1.1 1997/09/13 23:38:41 jak Exp $";
+static char rcsid_Matrix_cc[] = "$Id: Matrix.cc,v 1.1.1.1 1997/09/13 23:38:41 jak Exp $";
 
 #pragma implementation
 #include "Matrix.h"
@@ -71,8 +71,8 @@ template operator  + ( Matrix< mp_ratio_complex > const &, mp_ratio_complex );
 
 //  History:
 //    $Log: Matrix.cc,v $
-//    Revision 1.1  1997/09/13 23:38:41  jak
-//    Initial revision
+//    Revision 1.1.1.1  1997/09/13 23:38:41  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //
 

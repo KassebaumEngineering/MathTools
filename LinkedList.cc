@@ -15,12 +15,12 @@
 //  Known Bugs:
 //
 //  Revision:
-//    $Id: LinkedList.cc,v 1.1 1997/09/13 23:38:40 jak Exp $
+//    $Id: LinkedList.cc,v 1.1.1.1 1997/09/13 23:38:40 jak Exp $
 //
 // =====================================
 //
 
-static char rcsid_LinkedList_cc[] = "$Id: LinkedList.cc,v 1.1 1997/09/13 23:38:40 jak Exp $";
+static char rcsid_LinkedList_cc[] = "$Id: LinkedList.cc,v 1.1.1.1 1997/09/13 23:38:40 jak Exp $";
 
 #pragma implementation
 #include "LinkedList.h"
@@ -38,8 +38,8 @@ template class LinkedList< MatrixComposition< long_double_complex > >;
 //
 //  History:
 //    $Log: LinkedList.cc,v $
-//    Revision 1.1  1997/09/13 23:38:40  jak
-//    Initial revision
+//    Revision 1.1.1.1  1997/09/13 23:38:40  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //
 

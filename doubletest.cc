@@ -12,12 +12,12 @@
 //    his graduate classwork at Purdue University.  
 //
 //  Revision:
-//    $Id: doubletest.cc,v 1.1 1997/09/13 23:38:42 jak Exp $
+//    $Id: doubletest.cc,v 1.1.1.1 1997/09/13 23:38:42 jak Exp $
 //
 // =====================================
 //
 
-static char rcsid_doubletest_cc[] = "$Id: doubletest.cc,v 1.1 1997/09/13 23:38:42 jak Exp $";
+static char rcsid_doubletest_cc[] = "$Id: doubletest.cc,v 1.1.1.1 1997/09/13 23:38:42 jak Exp $";
 
 //
 // ANSI-C Library Functions
@@ -134,7 +134,7 @@ main()
 //
 //  History:
 //    $Log: doubletest.cc,v $
-//    Revision 1.1  1997/09/13 23:38:42  jak
-//    Initial revision
+//    Revision 1.1.1.1  1997/09/13 23:38:42  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //

@@ -15,13 +15,13 @@
 //  Known Bugs:
 //
 //  Revision:
-//    $Id: Cholesky.cc,v 1.1 1997/09/13 23:38:37 jak Exp $
+//    $Id: Cholesky.cc,v 1.1.1.1 1997/09/13 23:38:37 jak Exp $
 //
 //
 // =====================================
 //
 
-static char rcsid_Cholesky_cc[] = "$Id: Cholesky.cc,v 1.1 1997/09/13 23:38:37 jak Exp $";
+static char rcsid_Cholesky_cc[] = "$Id: Cholesky.cc,v 1.1.1.1 1997/09/13 23:38:37 jak Exp $";
 
 #pragma implementation
 #include "Cholesky.h"
@@ -78,7 +78,7 @@ Cholesky<mp_ratio_complex>::Cholesky( Matrix<mp_ratio_complex> &matA ):
 
 //  History:
 //    $Log: Cholesky.cc,v $
-//    Revision 1.1  1997/09/13 23:38:37  jak
-//    Initial revision
+//    Revision 1.1.1.1  1997/09/13 23:38:37  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //

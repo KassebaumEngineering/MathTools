@@ -19,11 +19,11 @@
 //  Notes: 
 //
 //  Revision:
-//    $Id: IntArray.cc,v 1.1 1997/09/13 23:38:38 jak Exp $
+//    $Id: IntArray.cc,v 1.1.1.1 1997/09/13 23:38:38 jak Exp $
 //
 //  ************************************************************
 
-static char rcsid_IntArray_cc[] = "$Id: IntArray.cc,v 1.1 1997/09/13 23:38:38 jak Exp $";
+static char rcsid_IntArray_cc[] = "$Id: IntArray.cc,v 1.1.1.1 1997/09/13 23:38:38 jak Exp $";
 
 
 #include "IntArray.h"
@@ -222,8 +222,8 @@ istream & operator >> (istream &cbuf, const IntArray &Array)
 //
 // History:
 //   $Log: IntArray.cc,v $
-//   Revision 1.1  1997/09/13 23:38:38  jak
-//   Initial revision
+//   Revision 1.1.1.1  1997/09/13 23:38:38  jak
+//   Restored MathTools to new CVS repository. -jak
 //
 //
 

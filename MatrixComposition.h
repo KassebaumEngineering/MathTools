@@ -23,7 +23,7 @@
 //	  None. 
 //
 //  Revision:
-//    $Id: MatrixComposition.h,v 1.1 1997/09/13 23:38:42 jak Exp $
+//    $Id: MatrixComposition.h,v 1.1.1.1 1997/09/13 23:38:42 jak Exp $
 //
 //  ---------------------------------------------------------------------------
 //  Author(s) and Credits:
@@ -35,7 +35,7 @@
 #ifndef _MatrixComposition_h
 #define _MatrixComposition_h
 
-static char rcsid_MatrixComposition_h[] = "$Id: MatrixComposition.h,v 1.1 1997/09/13 23:38:42 jak Exp $";
+static char rcsid_MatrixComposition_h[] = "$Id: MatrixComposition.h,v 1.1.1.1 1997/09/13 23:38:42 jak Exp $";
 
 #pragma interface
 
@@ -84,7 +84,7 @@ public:
 //
 //  History:
 //    $Log: MatrixComposition.h,v $
-//    Revision 1.1  1997/09/13 23:38:42  jak
-//    Initial revision
+//    Revision 1.1.1.1  1997/09/13 23:38:42  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //

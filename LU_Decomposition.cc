@@ -15,12 +15,12 @@
 //  Known Bugs:
 //
 //  Revision:
-//    $Id: LU_Decomposition.cc,v 1.1 1997/09/13 23:38:39 jak Exp $
+//    $Id: LU_Decomposition.cc,v 1.1.1.1 1997/09/13 23:38:39 jak Exp $
 //
 // =====================================
 //
 
-static char rcsid_LU_Decomposition_cc[] = "$Id: LU_Decomposition.cc,v 1.1 1997/09/13 23:38:39 jak Exp $";
+static char rcsid_LU_Decomposition_cc[] = "$Id: LU_Decomposition.cc,v 1.1.1.1 1997/09/13 23:38:39 jak Exp $";
 
 #pragma implementation
 #include "LU_Decomposition.h"
@@ -28,8 +28,8 @@ static char rcsid_LU_Decomposition_cc[] = "$Id: LU_Decomposition.cc,v 1.1 1997/0
 //
 //  History:
 //    $Log: LU_Decomposition.cc,v $
-//    Revision 1.1  1997/09/13 23:38:39  jak
-//    Initial revision
+//    Revision 1.1.1.1  1997/09/13 23:38:39  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //
 

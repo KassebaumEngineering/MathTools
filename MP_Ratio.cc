@@ -18,10 +18,10 @@
 // Notes: 
 //
 //  Revision:
-//    $Id: MP_Ratio.cc,v 1.1 1997/09/13 23:38:41 jak Exp $
+//    $Id: MP_Ratio.cc,v 1.1.1.1 1997/09/13 23:38:41 jak Exp $
 //
 //  ************************************************************
-static char rcsid_MP_Ratio_cc[] = "$Id: MP_Ratio.cc,v 1.1 1997/09/13 23:38:41 jak Exp $";
+static char rcsid_MP_Ratio_cc[] = "$Id: MP_Ratio.cc,v 1.1.1.1 1997/09/13 23:38:41 jak Exp $";
 
 #include <float.h>
 #ifdef HPPA
@@ -924,8 +924,8 @@ template operator/(complex<MP_Ratio> const &, complex<MP_Ratio> const &);
 //
 // History:
 //    $Log: MP_Ratio.cc,v $
-//    Revision 1.1  1997/09/13 23:38:41  jak
-//    Initial revision
+//    Revision 1.1.1.1  1997/09/13 23:38:41  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //
 

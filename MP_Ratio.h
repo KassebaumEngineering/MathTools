@@ -27,14 +27,14 @@
 //    his graduate classwork at Purdue University.  
 //
 //  Revision:
-//    $Id: MP_Ratio.h,v 1.1 1997/09/13 23:38:41 jak Exp $
+//    $Id: MP_Ratio.h,v 1.1.1.1 1997/09/13 23:38:41 jak Exp $
 //
 //  ******************************************************************
 //
 #ifndef _MP_Ratio_h
 #define _MP_Ratio_h
 
-static char rcsid_MP_Ratio_h[] = "$Id: MP_Ratio.h,v 1.1 1997/09/13 23:38:41 jak Exp $";
+static char rcsid_MP_Ratio_h[] = "$Id: MP_Ratio.h,v 1.1.1.1 1997/09/13 23:38:41 jak Exp $";
 
 //
 // ANSI-C Library Functions
@@ -328,7 +328,7 @@ public:
 //
 //  History:
 //    $Log: MP_Ratio.h,v $
-//    Revision 1.1  1997/09/13 23:38:41  jak
-//    Initial revision
+//    Revision 1.1.1.1  1997/09/13 23:38:41  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //

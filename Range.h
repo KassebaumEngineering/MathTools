@@ -55,7 +55,7 @@
 //    builtin numeric types (e.g. int, char, double)
 //
 //  Revision:
-//    $Id: Range.h,v 1.1 1997/09/13 23:38:42 jak Exp $
+//    $Id: Range.h,v 1.1.1.1 1997/09/13 23:38:42 jak Exp $
 //
 //  ---------------------------------------------------------------------
 //  Author(s) and Credits:
@@ -66,7 +66,7 @@
 #ifndef _Range_H
 #define _Range_H
 
-static char rcsid_Range_h[] = "$Id: Range.h,v 1.1 1997/09/13 23:38:42 jak Exp $";
+static char rcsid_Range_h[] = "$Id: Range.h,v 1.1.1.1 1997/09/13 23:38:42 jak Exp $";
 
 #pragma interface
 
@@ -138,7 +138,7 @@ public:
 //
 //  History:
 //    $Log: Range.h,v $
-//    Revision 1.1  1997/09/13 23:38:42  jak
-//    Initial revision
+//    Revision 1.1.1.1  1997/09/13 23:38:42  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //

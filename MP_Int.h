@@ -28,13 +28,13 @@
 //    his graduate classwork at Purdue University.  
 //
 //  Revision:
-//    $Id: MP_Int.h,v 1.1 1997/09/13 23:38:40 jak Exp $
+//    $Id: MP_Int.h,v 1.1.1.1 1997/09/13 23:38:40 jak Exp $
 //  ******************************************************************
 //
 #ifndef _MP_Int_h
 #define _MP_Int_h
 
-static char rcsid_MP_Int_h[] = "$Id: MP_Int.h,v 1.1 1997/09/13 23:38:40 jak Exp $";
+static char rcsid_MP_Int_h[] = "$Id: MP_Int.h,v 1.1.1.1 1997/09/13 23:38:40 jak Exp $";
 
 //
 // ANSI-C Library Functions
@@ -280,7 +280,7 @@ public:
 //
 //  History:
 //    $Log: MP_Int.h,v $
-//    Revision 1.1  1997/09/13 23:38:40  jak
-//    Initial revision
+//    Revision 1.1.1.1  1997/09/13 23:38:40  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //

@@ -70,13 +70,13 @@
 //
 // ------------------------------------------------------------------
 //  Revision:
-//    $Id: LinkedList.h,v 1.1 1997/09/13 23:38:40 jak Exp $
+//    $Id: LinkedList.h,v 1.1.1.1 1997/09/13 23:38:40 jak Exp $
 //
 //  ******************************************************************
 #ifndef _LinkedList_h
 #define _LinkedList_h
 
-static char rcsid_LinkedList_h[] = "$Id: LinkedList.h,v 1.1 1997/09/13 23:38:40 jak Exp $";
+static char rcsid_LinkedList_h[] = "$Id: LinkedList.h,v 1.1.1.1 1997/09/13 23:38:40 jak Exp $";
 
 #pragma interface
 
@@ -282,7 +282,7 @@ T* LinkedList<T>::next( void ) {
 //
 //  History:
 //    $Log: LinkedList.h,v $
-//    Revision 1.1  1997/09/13 23:38:40  jak
-//    Initial revision
+//    Revision 1.1.1.1  1997/09/13 23:38:40  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //

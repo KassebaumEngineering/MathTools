@@ -18,10 +18,10 @@
 //  Notes: 
 //
 //  Revision:
-//    $Id: MP_Float.cc,v 1.1 1997/09/13 23:38:40 jak Exp $
+//    $Id: MP_Float.cc,v 1.1.1.1 1997/09/13 23:38:40 jak Exp $
 //
 // ************************************************************
-static char rcsid_MP_Float_cc[] = "$Id: MP_Float.cc,v 1.1 1997/09/13 23:38:40 jak Exp $";
+static char rcsid_MP_Float_cc[] = "$Id: MP_Float.cc,v 1.1.1.1 1997/09/13 23:38:40 jak Exp $";
 
 
 #include "MP_Float.h"
@@ -1056,7 +1056,7 @@ template operator/(complex<MP_Float> const &, complex<MP_Float> const &);
 //
 //  History:
 //    $Log: MP_Float.cc,v $
-//    Revision 1.1  1997/09/13 23:38:40  jak
-//    Initial revision
+//    Revision 1.1.1.1  1997/09/13 23:38:40  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //

@@ -15,12 +15,12 @@
 //  Known Bugs:
 //
 //  Revision:
-//    $Id: MatrixComposition.cc,v 1.1 1997/09/13 23:38:42 jak Exp $
+//    $Id: MatrixComposition.cc,v 1.1.1.1 1997/09/13 23:38:42 jak Exp $
 //
 // =====================================
 //
 
-static char rcsid_MatrixComposition_cc[] = "$Id: MatrixComposition.cc,v 1.1 1997/09/13 23:38:42 jak Exp $";
+static char rcsid_MatrixComposition_cc[] = "$Id: MatrixComposition.cc,v 1.1.1.1 1997/09/13 23:38:42 jak Exp $";
 
 #pragma implementation 
 #include "MatrixComposition.h"
@@ -28,8 +28,8 @@ static char rcsid_MatrixComposition_cc[] = "$Id: MatrixComposition.cc,v 1.1 1997
 //
 //  History:
 //    $Log: MatrixComposition.cc,v $
-//    Revision 1.1  1997/09/13 23:38:42  jak
-//    Initial revision
+//    Revision 1.1.1.1  1997/09/13 23:38:42  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //
 
