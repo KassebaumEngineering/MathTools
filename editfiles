@@ -1,4 +1,4 @@
-cd $(HOME)/PhD_Thesis/Tools/CurrentPhD/MatrixTools/MathTools
+cd $(HOME)/PhD_Research/Tools/CurrentPhD/MatrixTools/MathTools
 open doubletest.cc
 open MP_Ratio.cc
 open MP_Ratio.h
