@@ -22,20 +22,19 @@
 //  Known Bugs:
 //	  None. 
 //
-//  ---------------------------------------------------------------------
 //  Author(s) and Credits:
 //	  This Software was originally written by John Kassebaum as a part of 
 //    his graduate classwork at Purdue University.  
 //
 //  Revision:
-//    $Id: Cholesky.h,v 1.1 1997/09/13 23:38:38 jak Exp $
+//    $Id: Cholesky.h,v 1.2 1997/09/14 01:01:30 jak Exp $
 //
 //  ******************************************************************
 //
 #ifndef _Cholesky_h
 #define _Cholesky_h
 
-static char rcsid_Cholesky_h[] = "$Id: Cholesky.h,v 1.1 1997/09/13 23:38:38 jak Exp $";
+static char rcsid_Cholesky_h[] = "$Id: Cholesky.h,v 1.2 1997/09/14 01:01:30 jak Exp $";
 
 #pragma interface
 
@@ -351,7 +350,10 @@ Matrix<NUMTYPE> Cholesky<NUMTYPE>:: operator[] ( int  key ) const
 //
 //  History:
 //    $Log: Cholesky.h,v $
-//    Revision 1.1  1997/09/13 23:38:38  jak
-//    Initial revision
+//    Revision 1.2  1997/09/14 01:01:30  jak
+//    Some purely cosmetic changes. -jak
+//
+//    Revision 1.1.1.1  1997/09/13 23:38:38  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //

@@ -7,23 +7,18 @@
 //  This software was written by John Kassebaum as a part of his graduate
 //  course work at Purdue.  He retains all rights to this software.  
 //
-//  ---------------------------------------------------------------------------
-//  Author(s) and Credits:
-//	  This Software was originally written by John Kassebaum as a part of 
-//    his graduate classwork at Purdue University.  
-//
 //  ----------
 //  See IntArray.H for the Interface description and Usage directions.
 //  ----------
 //
-//  Notes: 
-//
 //  Revision:
-//    $Id: IntArray.cc,v 1.1 1997/09/13 23:38:38 jak Exp $
+//    $Id: IntArray.cc,v 1.2 1997/09/14 01:01:32 jak Exp $
+//
+//  Notes: 
 //
 //  ************************************************************
 
-static char rcsid_IntArray_cc[] = "$Id: IntArray.cc,v 1.1 1997/09/13 23:38:38 jak Exp $";
+static char rcsid_IntArray_cc[] = "$Id: IntArray.cc,v 1.2 1997/09/14 01:01:32 jak Exp $";
 
 
 #include "IntArray.h"
@@ -222,8 +217,11 @@ istream & operator >> (istream &cbuf, const IntArray &Array)
 //
 // History:
 //   $Log: IntArray.cc,v $
-//   Revision 1.1  1997/09/13 23:38:38  jak
-//   Initial revision
+//   Revision 1.2  1997/09/14 01:01:32  jak
+//   Some purely cosmetic changes. -jak
+//
+//   Revision 1.1.1.1  1997/09/13 23:38:38  jak
+//   Restored MathTools to new CVS repository. -jak
 //
 //
 

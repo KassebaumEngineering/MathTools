@@ -21,20 +21,19 @@
 //  Known Bugs:
 //	None. 
 //
-//  ---------------------------------------------------------------------
 //  Author(s) and Credits:
 //	  This Software was originally written by John Kassebaum as a part of 
 //    his graduate classwork at Purdue University.  
 //
 //  Revision:
-//    $Id: IntArray.h,v 1.1 1997/09/13 23:38:39 jak Exp $
+//    $Id: IntArray.h,v 1.2 1997/09/14 01:01:34 jak Exp $
 //
 //  ******************************************************************
 //
 #ifndef _IntArray_H
 #define _IntArray_H
 
-static char rcsid_IntArray_h[] = "$Id: IntArray.h,v 1.1 1997/09/13 23:38:39 jak Exp $";
+static char rcsid_IntArray_h[] = "$Id: IntArray.h,v 1.2 1997/09/14 01:01:34 jak Exp $";
 
 //
 // ANSI-C Library Functions
@@ -102,7 +101,10 @@ public:
 //
 //  History:
 //    $Log: IntArray.h,v $
-//    Revision 1.1  1997/09/13 23:38:39  jak
-//    Initial revision
+//    Revision 1.2  1997/09/14 01:01:34  jak
+//    Some purely cosmetic changes. -jak
+//
+//    Revision 1.1.1.1  1997/09/13 23:38:39  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //

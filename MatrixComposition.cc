@@ -7,20 +7,15 @@
 //  This software was written by John Kassebaum as a part of his graduate
 //  course work at Purdue.  He retains all rights to this software.  
 //
-//  ---------------------------------------------------------------------------
-//  Author(s) and Credits:
-//	  This Software was originally written by John Kassebaum as a part of 
-//    his graduate classwork at Purdue University.  
+//  Revision:
+//    $Id: MatrixComposition.cc,v 1.2 1997/09/14 01:01:58 jak Exp $
 //
 //  Known Bugs:
-//
-//  Revision:
-//    $Id: MatrixComposition.cc,v 1.1 1997/09/13 23:38:42 jak Exp $
 //
 // =====================================
 //
 
-static char rcsid_MatrixComposition_cc[] = "$Id: MatrixComposition.cc,v 1.1 1997/09/13 23:38:42 jak Exp $";
+static char rcsid_MatrixComposition_cc[] = "$Id: MatrixComposition.cc,v 1.2 1997/09/14 01:01:58 jak Exp $";
 
 #pragma implementation 
 #include "MatrixComposition.h"
@@ -28,8 +23,11 @@ static char rcsid_MatrixComposition_cc[] = "$Id: MatrixComposition.cc,v 1.1 1997
 //
 //  History:
 //    $Log: MatrixComposition.cc,v $
-//    Revision 1.1  1997/09/13 23:38:42  jak
-//    Initial revision
+//    Revision 1.2  1997/09/14 01:01:58  jak
+//    Some purely cosmetic changes. -jak
+//
+//    Revision 1.1.1.1  1997/09/13 23:38:42  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //
 

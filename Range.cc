@@ -7,20 +7,15 @@
 //  This software was written by John Kassebaum as a part of his graduate
 //  course work at Purdue.  He retains all rights to this software.  
 //
-//  ---------------------------------------------------------------------------
-//  Author(s) and Credits:
-//	  This Software was originally written by John Kassebaum as a part of 
-//    his graduate classwork at Purdue University.  
+//  Revision:
+//    $Id: Range.cc,v 1.2 1997/09/14 01:02:01 jak Exp $
 //
 //  Known Bugs:
-//
-//  Revision:
-//    $Id: Range.cc,v 1.1 1997/09/13 23:38:42 jak Exp $
 //
 // =====================================
 //
 
-static char rcsid_Range_cc[] = "$Id: Range.cc,v 1.1 1997/09/13 23:38:42 jak Exp $";
+static char rcsid_Range_cc[] = "$Id: Range.cc,v 1.2 1997/09/14 01:02:01 jak Exp $";
 
 #pragma implementation
 #include "Range.h"
@@ -28,7 +23,10 @@ static char rcsid_Range_cc[] = "$Id: Range.cc,v 1.1 1997/09/13 23:38:42 jak Exp 
 //
 //  History:
 //    $Log: Range.cc,v $
-//    Revision 1.1  1997/09/13 23:38:42  jak
-//    Initial revision
+//    Revision 1.2  1997/09/14 01:02:01  jak
+//    Some purely cosmetic changes. -jak
+//
+//    Revision 1.1.1.1  1997/09/13 23:38:42  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //

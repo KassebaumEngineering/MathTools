@@ -26,7 +26,6 @@
 //  Known Bugs:
 //	  None. 
 //
-//  ---------------------------------------------------------------------------
 //  Author(s) and Credits:
 //	  This Software was originally written by John Kassebaum as a part of 
 //    his graduate classwork at Purdue University.  
@@ -34,15 +33,14 @@
 //  Known Bugs:
 //
 //  Revision:
-//    $Id: Matrix.h,v 1.1 1997/09/13 23:38:41 jak Exp $
-//
+//    $Id: Matrix.h,v 1.2 1997/09/14 01:01:55 jak Exp $
 //
 // ==========================================================================
 //
 #ifndef _Matrix_h
 #define _Matrix_h
 
-static char rcsid_Matrix_h[] = "$Id: Matrix.h,v 1.1 1997/09/13 23:38:41 jak Exp $";
+static char rcsid_Matrix_h[] = "$Id: Matrix.h,v 1.2 1997/09/14 01:01:55 jak Exp $";
 
 #pragma interface
 
@@ -1875,7 +1873,10 @@ void Matrix<NUMTYPE>:: delDecompose ( int  key )
 //
 //  History:
 //    $Log: Matrix.h,v $
-//    Revision 1.1  1997/09/13 23:38:41  jak
-//    Initial revision
+//    Revision 1.2  1997/09/14 01:01:55  jak
+//    Some purely cosmetic changes. -jak
+//
+//    Revision 1.1.1.1  1997/09/13 23:38:41  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //

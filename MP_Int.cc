@@ -10,13 +10,14 @@
 //  See MP_Int.H for the Interface description and Usage directions.
 //  ----------
 //
+//  Revision:
+//    $Id: MP_Int.cc,v 1.2 1997/09/14 01:01:44 jak Exp $
+//
 // Notes: 
 //
-//  Revision:
-//    $Id: MP_Int.cc,v 1.1 1997/09/13 23:38:40 jak Exp $
-//
 //  ************************************************************
-static char rcsid_MP_Int_cc[] = "$Id: MP_Int.cc,v 1.1 1997/09/13 23:38:40 jak Exp $";
+//
+static char rcsid_MP_Int_cc[] = "$Id: MP_Int.cc,v 1.2 1997/09/14 01:01:44 jak Exp $";
 
 
 #include "MP_Int.h"
@@ -1060,8 +1061,11 @@ size_t MP_Int::sizeInBase( int base )
 
 // History:
 //   $Log: MP_Int.cc,v $
-//   Revision 1.1  1997/09/13 23:38:40  jak
-//   Initial revision
+//   Revision 1.2  1997/09/14 01:01:44  jak
+//   Some purely cosmetic changes. -jak
+//
+//   Revision 1.1.1.1  1997/09/13 23:38:40  jak
+//   Restored MathTools to new CVS repository. -jak
 //
 //
 

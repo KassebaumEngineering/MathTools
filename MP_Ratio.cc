@@ -6,22 +6,17 @@
 //  This software was written by John Kassebaum as a part of his graduate
 //  course work at Purdue.  He retains all rights to this software.  
 //
-//  ---------------------------------------------------------------------------
-//  Author(s) and Credits:
-//	  This Software was originally written by John Kassebaum as a part of 
-//    his graduate classwork at Purdue University.  
-//
 //  ----------
 //  See MP_Ratio.H for the Interface description and Usage directions.
 //  ----------
 //
+//  Revision:
+//    $Id: MP_Ratio.cc,v 1.2 1997/09/14 01:01:48 jak Exp $
+//
 // Notes: 
 //
-//  Revision:
-//    $Id: MP_Ratio.cc,v 1.1 1997/09/13 23:38:41 jak Exp $
-//
 //  ************************************************************
-static char rcsid_MP_Ratio_cc[] = "$Id: MP_Ratio.cc,v 1.1 1997/09/13 23:38:41 jak Exp $";
+static char rcsid_MP_Ratio_cc[] = "$Id: MP_Ratio.cc,v 1.2 1997/09/14 01:01:48 jak Exp $";
 
 #include <float.h>
 #ifdef HPPA
@@ -924,8 +919,11 @@ template operator/(complex<MP_Ratio> const &, complex<MP_Ratio> const &);
 //
 // History:
 //    $Log: MP_Ratio.cc,v $
-//    Revision 1.1  1997/09/13 23:38:41  jak
-//    Initial revision
+//    Revision 1.2  1997/09/14 01:01:48  jak
+//    Some purely cosmetic changes. -jak
+//
+//    Revision 1.1.1.1  1997/09/13 23:38:41  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //
 

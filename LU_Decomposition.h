@@ -22,20 +22,19 @@
 //  Known Bugs:
 //	  None. 
 //
-//  ---------------------------------------------------------------------
 //  Author(s) and Credits:
 //	  This Software was originally written by John Kassebaum as a part of 
 //    his graduate classwork at Purdue University.  
 //
 //  Revision:
-//    $Id: LU_Decomposition.h,v 1.1 1997/09/13 23:38:39 jak Exp $
+//    $Id: LU_Decomposition.h,v 1.2 1997/09/14 01:01:36 jak Exp $
 //
 //  ******************************************************************
 //
 #ifndef _LU_Decomposition_h
 #define _LU_Decomposition_h
 
-static char rcsid_LU_Decomposition_h[] = "$Id: LU_Decomposition.h,v 1.1 1997/09/13 23:38:39 jak Exp $";
+static char rcsid_LU_Decomposition_h[] = "$Id: LU_Decomposition.h,v 1.2 1997/09/14 01:01:36 jak Exp $";
 
 #pragma interface
 
@@ -480,7 +479,10 @@ Matrix<NUMTYPE> LU_Decomposition<NUMTYPE>:: operator[] ( int  key ) const
 //
 //  History:
 //    $Log: LU_Decomposition.h,v $
-//    Revision 1.1  1997/09/13 23:38:39  jak
-//    Initial revision
+//    Revision 1.2  1997/09/14 01:01:36  jak
+//    Some purely cosmetic changes. -jak
+//
+//    Revision 1.1.1.1  1997/09/13 23:38:39  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //

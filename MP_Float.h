@@ -16,25 +16,24 @@
 //  Original Messages:
 //
 //  Side Effects:
-//	None.
+//	  None.
 //
 //  Known Bugs:
-//	None. 
+//	  None. 
 //
-//  ---------------------------------------------------------------------------
 //  Author(s) and Credits:
 //	  This Software was originally written by John Kassebaum as a part of 
 //    his graduate classwork at Purdue University.  
 //
 //  Revision:
-//    $Id: MP_Float.h,v 1.1 1997/09/13 23:38:40 jak Exp $
+//    $Id: MP_Float.h,v 1.2 1997/09/14 01:01:42 jak Exp $
 //
 //  ******************************************************************
 //
 #ifndef _MP_Float_h
 #define _MP_Float_h
 
-static char rcsid_MP_Float_h[] = "$Id: MP_Float.h,v 1.1 1997/09/13 23:38:40 jak Exp $";
+static char rcsid_MP_Float_h[] = "$Id: MP_Float.h,v 1.2 1997/09/14 01:01:42 jak Exp $";
 
 //
 // ANSI-C Library Functions
@@ -308,7 +307,10 @@ public:
 //
 //  History:
 //    $Log: MP_Float.h,v $
-//    Revision 1.1  1997/09/13 23:38:40  jak
-//    Initial revision
+//    Revision 1.2  1997/09/14 01:01:42  jak
+//    Some purely cosmetic changes. -jak
+//
+//    Revision 1.1.1.1  1997/09/13 23:38:40  jak
+//    Restored MathTools to new CVS repository. -jak
 //
 //
